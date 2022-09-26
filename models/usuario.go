@@ -7,8 +7,7 @@ import (
 )
 
 /*
-Usuario
-Modelo de usuario de la base de datos MongoDB`
+Usuario, modelo de usuario de la base de datos MongoDB`
 */
 type Usuario struct {
 	ID              primitive.ObjectID `bson:"_id,omitempty" json:"id"`

@@ -9,15 +9,13 @@ import (
 )
 
 /*
-MongoCN
-Objeto de conexión a la base de datos
+MongoCN, objeto de conexión a la base de datos
 */
 var MongoCN = ConectarBD()
 var clientOptions = options.Client().ApplyURI("mongodb+srv://jv2022:ayrsenna@twittor-jvl.8lxztis.mongodb.net/?retryWrites=true&w=majority")
 
 /*
-ConectarBD
-Función que permite conectar a la base de datos.
+ConectarBD, función que permite conectar a la base de datos.
 */
 func ConectarBD() *mongo.Client {
 	client, err := mongo.Connect(context.TODO(), clientOptions)
@@ -37,8 +35,7 @@ func ConectarBD() *mongo.Client {
 }
 
 /*
-ChequeoConection
-Función que realiza el ping a la base de datos.
+ChequeoConection, función que realiza el ping a la base de datos.
 */
 func ChequeoConection() int {
 	err := MongoCN.Ping(context.TODO(), nil)

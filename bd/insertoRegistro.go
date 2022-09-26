@@ -32,5 +32,4 @@ func InsertoRegistro(u models.Usuario) (string, bool, error) {
 
 	ObjID, _ := result.InsertedID.(primitive.ObjectID)
 	return ObjID.String(), true, nil
-
 }

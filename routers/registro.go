@@ -9,8 +9,7 @@ import (
 )
 
 /*
-Registro
-Función que permite crear en la BD el registro de usuario.
+Registro, función que permite crear en la BD el registro de usuario.
 */
 func Registro(w http.ResponseWriter, r *http.Request) {
 	var t models.Usuario

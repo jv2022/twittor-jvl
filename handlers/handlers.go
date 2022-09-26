@@ -8,13 +8,12 @@ import (
 	"github.com/jv2022/twittor-jvl/middlew" // package middlew del proyecto
 	"github.com/jv2022/twittor-jvl/routers" // package routers del proyecto
 
-	"github.com/gorilla/mux" // permite ???
+	"github.com/gorilla/mux" // permite manejar las peticiones http
 	"github.com/rs/cors"     // permite dar permisos de ejecución remota a la aplicación
 )
 
 /*
-Manejadores
-Función donde se setea el puerto, el handler y luego pone a escuchar al Servidor Web.
+Manejadores, función donde se setea el puerto, el handler y luego pone a escuchar al Servidor Web.
 */
 func Manejadores() {
 	router := mux.NewRouter()

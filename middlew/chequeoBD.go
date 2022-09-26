@@ -7,8 +7,7 @@ import (
 )
 
 /*
-ChequeoBD
-Middleware que permite conocer el estado de la base de datos.
+ChequeoBD, middleware que permite conocer el estado de la base de datos.
 */
 func ChequeoBD(next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
