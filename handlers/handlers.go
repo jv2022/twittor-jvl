@@ -20,6 +20,7 @@ func Manejadores() {
 
 	// definiendo los middleware a utilizar por cada endpoint de la aplicación
 	router.HandleFunc("/registro", middlew.ChequeoBD(routers.Registro)).Methods("POST")
+	router.HandleFunc("/login", middlew.ChequeoBD(routers.Login)).Methods("POST")
 
 	// obteniendo el puerto de conexión
 	PORT := os.Getenv("PORT")
