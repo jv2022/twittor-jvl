@@ -32,7 +32,7 @@ func ProcesoToken(tk string) (*models.Claim, bool, string, error) {
 	// filtrando la palabra "Bearer" del string que contiene el token
 	splitToken := strings.Split(tk, "Bearer")
 	if len(splitToken) != 2 {
-		return claims, false, string(""), errors.New("formato de toeken invalido")
+		return claims, false, string(""), errors.New("formato de token invalido")
 	}
 
 	// limpiando los espacios blancos del token
